@@ -1,0 +1,410 @@
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --mainColor: #091540;
+}
+#me {
+  scroll-margin-top: 30px;
+}
+#projects {
+  scroll-margin-top: 80px;
+}
+#contact{
+  scroll-margin-top: 200px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.LeftSection h1,
+.LeftSection h4,
+.LeftSection p {
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: var(--mainColor);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  margin-top: -63px;
+  z-index: 1000;
+}
+.Image {
+  margin-left: 20px;
+  width: 40%;
+}
+.Image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.links {
+  width: 40%;
+}
+.links ul {
+  display: flex;
+  justify-content: space-around;
+}
+.links a li {
+  color: white;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.links a li {
+  transition: 0.3s;
+}
+
+.links a li:hover {
+  color: #7692ff;
+  transform: scale(1.1);
+}
+.container {
+  padding: 20px;
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 63px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.MainDiv {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.LeftSection {
+  flex-grow: 1;
+}
+.RightSection {
+  flex-grow: 3;
+}
+.RightSection img {
+  width: 100%;
+  height: 100%;
+}
+.icon1 {
+  position: relative;
+  color: #1b2cc1;
+  font-size: 22px;
+}
+.LeftSection img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.icon2 {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ProjectsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.Card {
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(9, 21, 64, 0.15);
+  transition: 0.3s;
+}
+
+.Card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(27, 44, 193, 0.25);
+}
+
+.imageClass {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageClass img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h1 {
+  color: #091540;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content > p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.content div {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.content div p {
+  background-color: #abd2fa;
+  color: #091540;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.content a {
+  display: inline-block;
+  background-color: #1b2cc1;
+  color: white;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.burger {
+  color: white;
+  display: none;
+}
+.content a:hover {
+  background-color: #091540;
+}
+.contact {
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+.mainCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainCon .borderdiv {
+  border-left: 1px solid #e0e0e0;
+  height: 200px;
+  width: 1px;
+}
+.LeftSide {
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(9, 21, 64, 0.12);
+}
+
+.LeftSide h2 {
+  color: #091540;
+  margin-bottom: 25px;
+}
+
+.LeftSide h4 {
+  color: #555;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.LeftSide i {
+  color: #1b2cc1;
+  width: 25px;
+  margin-right: 8px;
+}
+.RightSide {
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(9, 21, 64, 0.12);
+}
+
+.RightSide h2 {
+  color: #091540;
+  margin-bottom: 25px;
+}
+
+.RightSide a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.RightSide h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.RightSide i {
+  color: #1b2cc1;
+  width: 25px;
+  margin-right: 8px;
+}
+
+.RightSide a:hover {
+  color: #1b2cc1;
+  transform: translateX(5px);
+}
+footer {
+  background-color: #091540;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #abd2fa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #7692ff;
+}
+#message {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#message h2 {
+  color: #091540;
+  margin-bottom: 10px;
+}
+
+#message > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#message form {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(9, 21, 64, 0.12);
+}
+
+#message input,
+#message textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #abd2fa;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#message input:focus,
+#message textarea:focus {
+  border-color: #1b2cc1;
+}
+
+#message textarea {
+  height: 130px;
+  resize: none;
+}
+
+#message button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1b2cc1;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#message button:hover {
+  background-color: #091540;
+}
+@media (max-width: 1100px) {
+  .mainCon {
+    flex-direction: column;
+  }
+  .mainCon .LeftSide,
+  .RightSide {
+    margin: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .RightSection {
+    display: none;
+  }
+  .links ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+    width: 70%;
+    text-align: end;
+  }
+  .MainDiv .LeftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LeftSection img {
+    margin-bottom: 10px;
+  }
+  .mainCon .LeftSide,
+  .RightSide {
+    width: 250px;
+    margin: 10px;
+  }
+  #message form {
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  #message {
+    padding: 50px 15px;
+  }
+
+  #message form {
+    width: 200px;
+    padding: 20px;
+  }
+}
